@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HW 11 Promise</title>
-</head>
-<body>
-<script src="./js/task-3.js" type="module"></script>
-<script src="./js/task-2.js" type="module"></script>
-<script src="./js/task-1.js" type="module"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW 11 Promise</title>
+  </head>
+  <body>
+    <h1>Promise</h1>
+    <p>
+      <span style="font-weight: 900">Promise (обещание, промис)</span> — объект, представляющий текущее
+      состояние асинхронной операции. Удобный способ организации асинхронного кода.
+    </p>
+    <p style="font-weight: 900">У промиса есть 2 состояния:</p>
+    <ul>
+      <li><span style="font-weight: 900">Pending</span> — ожидание, исходное состояние при создании промиса.</li>
+      <li>
+        <span style="font-weight: 900">Settled</span> — выполнен, которое в свою очередь делится на две категории:
+        fullfilled — выполнено успешно и rejected — выполнено с ошибкой.
+      </li>
+    </ul>
+    <p>
+      Вначале промис находится в состоянии ожидания (pending), после чего он может выполнится успешно (fulfilled) или с
+      ошибкой (rejected). Когда промис переходит в состояние выполнен (settled), с результатом или ошибкой – это
+      навсегда. Грубо говоря, промис - это болванка для данных, значение которых мы не знаем в момент его создания.
+    </p>
+
+    <script src="./js/task-3.js" type="module"></script>
+    <script src="./js/task-2.js" type="module"></script>
+    <script src="./js/task-1.js" type="module"></script>
+  </body>
 </html>

@@ -10,7 +10,7 @@ const toggleUserState = (allUsers, userName) => {
     setTimeout(() => {
       const updatedUsers = allUsers.map((user) => (user.name === userName ? { ...user, active: !user.active } : user));
       resolve(updatedUsers);
-    });
+    },0);
   });
 };
 
